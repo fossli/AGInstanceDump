@@ -20,6 +20,8 @@
 
 @end
 
+// for further research we could look more into this document https://github.com/limneos/weak_classdump/blob/master/weak_classdump.cy
+
 @interface VGInstanceDumper : NSObject {}
 
 + (void)iterateOverPropertiesInInstance:(id)instance ofClass:(Class)class block:(void(^)(objc_property_t property, NSString *propertyName, id propertyValue, VGEncodeType *encodeType, BOOL *stop))block;
